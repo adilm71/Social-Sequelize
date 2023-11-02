@@ -1,4 +1,8 @@
+const { DataTypes } = require("sequelize");
 
-let Like;
+const Like = sequelize.define("Like", {
+  body: DataTypes.STRING,
+  createdAt: DataTypes.DATE,
+});
 
 module.exports = Like;
